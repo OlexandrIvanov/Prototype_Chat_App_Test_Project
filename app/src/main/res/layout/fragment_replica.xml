@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialog_fragment_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.example.asus.my.ReplicaFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_for_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:background="@android:color/holo_blue_light">
+
+        <TextView
+            android:id="@+id/fragment_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="24sp"
+            tools:text="@string/dialog_message" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/relativeLayout2"
+        android:layout_below="@+id/ll_for_tv" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/et_text"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:text="@android:string/ok" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/relativeLayout2"
+            android:layout_alignBottom="@+id/relativeLayout2"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="102dp"
+            android:layout_weight="1"
+            android:text="@android:string/cancel" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

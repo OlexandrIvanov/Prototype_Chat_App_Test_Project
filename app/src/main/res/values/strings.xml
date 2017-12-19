@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My</string>
+    <string name="replica_a">Replica A</string>
+    <string name="replica_b">Replica B</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dialog_message">Введіть текст</string>
+</resources>
